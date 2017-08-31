@@ -1,0 +1,28 @@
+{
+  "name": "litera5-api-css-themes",
+  "version": "1.0.0",
+  "description": "Темы оформления результатов проверки документа в системе Литера5",
+  "main": "dist/index.html",
+  "repository": "git@git.hitsoft-it.com:github/litera5-api-css-themes.git",
+  "author": "Konstantin Borisov <smeagol74@gmail.com>",
+  "license": "GPL3",
+  "scripts": {
+    "clean": "rimraf dist/css dist/*.html",
+    "build:old": "node-sass --output dist/css/ --output-style compressed src/scss/litera5.old.scss",
+    "build:new": "node-sass --output dist/css/ --output-style compressed src/scss/litera5.new.scss",
+    "build:orfogrammka": "node-sass --output dist/css/ --output-style compressed src/scss/litera5.orfogrammka.scss",
+    "build:html:root": "cp src/index.html dist/",
+    "build:html:old": "cp src/theme.html dist/_old.html & replace-in-file /{THEME}/g old dist/_old.html  --isRegex",
+    "build:html:new": "cp src/theme.html dist/_new.html & replace-in-file /{THEME}/g new dist/_new.html --isRegex",
+    "build:html:orfogrammka": "cp src/theme.html dist/_orfogrammka.html & replace-in-file /{THEME}/g orfogrammka dist/_orfogrammka.html --isRegex",
+    "build:html": "npm run build:html:root & npm run build:html:old & npm run build:html:new & npm run build:html:orfogrammka",
+    "prebuild": "npm run clean",
+    "build": "npm run build:old & npm run build:new & npm run build:orfogrammka & npm run build:html"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "node-sass": "^4.5.3",
+    "replace-in-file": "^2.6.3",
+    "rimraf": "^2.6.1"
+  }
+}

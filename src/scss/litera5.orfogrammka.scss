@@ -1,0 +1,79 @@
+@import 'variables.orfogrammka';
+@import 'palette.orfogrammka';
+@import 'mixins';
+
+@import 'common';
+@import 'meta';
+
+table {
+	tr {
+		th,
+		td {
+			font-size: $font-size-base !important;
+		}
+	}
+}
+
+p {
+	text-align: justify;
+	text-indent: 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+@mixin kind($colorBase, $colorBorderBase, $url) {
+	$colorBackground: darken($colorBase, 5%);
+	$colorBackgroundHl: lighten($colorBase, 0%);
+	$colorBorder: lighten($colorBorderBase, 15%);
+	$colorBorderHl: darken($colorBorderBase, 0%);
+
+	&.large {
+		background: $url repeat-x 100% 100%;
+	}
+
+	&.small {
+		@include translucent-background($colorBackground, 0.5);
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+
+	&.active {
+		background: $colorBackgroundHl;
+		padding: 4px 0;
+		border-top: 0 solid $colorBorderHl;
+		border-bottom: 2px solid $colorBorderHl;
+
+		&.start {
+			border-left: 0 solid $colorBorderHl;
+			@include border-left-radius(0px);
+			padding-left: 0;
+		}
+
+		&.end {
+			border-right: 0 solid $colorBorderHl;
+			@include border-right-radius(0px);
+			padding-right: 0;
+		}
+
+		&.annotation-group-inactive {
+			border-bottom-style: dotted;
+		}
+	}
+
+	&.annotation-group-primary {
+		@include translucent-background($colorBackground, 0.70);
+		border-bottom: 2px dotted $colorBorderHl;
+		padding: 4px 0;
+
+		&.active {
+			border-bottom-style: solid;
+		}
+	}
+
+	&.annotation-group-secondary {
+		@include translucent-background($colorBackground, 0.85);
+	}
+
+}
+
+@import 'annotation';

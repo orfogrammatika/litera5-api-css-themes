@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link type="text/css" rel="stylesheet" href="css/litera5.orfogrammka.css"/>
+	</head>
+	<body>
+		<style>
+			body>div.container {
+				max-width: 900px;
+				margin: 0 auto;
+			}
+		</style>
+		<div class="container">
+		<h1>Пример использования темы «orfogrammka»</h1>
+		<section>
+			<h2>Общие элементы</h2>
+			<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.</p>
+
+			<ul>
+				<li>Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.</li>
+				<li>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.</li>
+				<li>Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.</li>
+			</ul>
+
+			<table>
+				<thead>
+					<tr>
+						<td colspan="2">Таблица</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу.</td>
+						<td>Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. </td>
+					</tr>
+					<tr>
+						<td>Грустный реторический вопрос скатился по его щеке и он продолжил свой путь.</td>
+						<td>По дороге встретил текст рукопись.</td>
+					</tr>
+					<tr>
+						<td>Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и».</td>
+						<td>Возвращайся ты лучше в свою безопасную страну».</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<h2>Элементы служебной разметки</h2>
+			<div class="litera5-meta">
+				<div class="meta meta-title">
+					<h1>Заголовок статьи</h1>
+				</div>
+				<div class="meta meta-description">
+					<p>Тут краткое описание статьи</p>
+				</div>
+				<div class="meta meta-keywords">
+					<h5>ключевые слова статьи</h5>
+				</div>
+				<div class="meta meta-custom-sample">Пример дополнительного служебного поля</div>
+			</div>
+			<p data-litera5-nocheck>Этот параграф текста не будет проверяться Литерой. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами.</p>
+		</section>
+		<section>
+			<h2>Проверки вкладки «Правописание»</h2>
+			<h4>Орфография (mkSpelling)</h4>
+			<p>Далеко-далеко за словесными горами
+				<span class="annotation visible mkSpelling start end small">тут ошибка</span>
+				в стране гласных и согласных
+				<span class="annotation visible mkSpelling start end small active">тут выбранная ошибка</span>
+				живут рыбные тексты.
+				<span class="annotation visible mkSpelling start end small annotation-group-primary">тут групповая ошибка</span>
+				Вдали от всех живут они
+				<span class="annotation visible mkSpelling start end small annotation-group-primary active">тут выбранная групповая ошибка</span>
+				в буквенных домах на берегу Семантика большого языкового океана.
+				Маленький ручеек Даль журчит
+				<span class="annotation visible mkSpelling start end large">тут ошибка в очень большом кусте текста</span>
+				по всей стране
+				<span class="annotation visible mkSpelling start end large active">тут ошибка в очень большом кусте текста и выбрана</span>
+				и обеспечивает ее всеми необходимыми правилами.</p>
+
+			<h4>Грамматика (mkGrammar)</h4>
+			<p>Эта парадигматическая страна,
+				<span class="annotation visible mkGrammar start end small">тут ошибка</span>
+				в которой жаренные члены предложения
+				<span class="annotation visible mkGrammar start end small active">тут выбранная ошибка</span>
+				залетают прямо в рот.
+				<span class="annotation visible mkGrammar start end small annotation-group-primary">тут групповая ошибка</span>
+				Даже всемогущая пунктуация не имеет
+				<span class="annotation visible mkGrammar start end small annotation-group-primary active">тут выбранная групповая ошибка</span>
+				власти над рыбными текстами, ведущими безорфографичный образ
+				<span class="annotation visible mkGrammar start end large">тут ошибка в очень большом кусте текста</span>
+				жизни. Однажды одна маленькая строчка рыбного текста по имени
+				<span class="annotation visible mkGrammar start end large active">тут ошибка в очень большом кусте текста и выбрана</span>
+				Lorem ipsum решила выйти в большой мир грамматики.</p>
+
+			<h4>Пунктуация (mkPunctuation)</h4>
+			<p>Великий Оксмокс предупреждал ее
+				<span class="annotation visible mkPunctuation start end small">тут ошибка</span>
+				о злых запятых, диких знаках
+				<span class="annotation visible mkPunctuation start end small active">тут выбранная ошибка</span>
+				вопроса и коварных точках с запятой,
+				<span class="annotation visible mkPunctuation start end small annotation-group-primary">тут групповая ошибка</span>
+				но текст не дал сбить
+				<span class="annotation visible mkPunctuation start end small annotation-group-primary active">тут выбранная групповая ошибка</span>
+				себя с толку. Он собрал
+				<span class="annotation visible mkPunctuation start end large">тут ошибка в очень большом кусте текста</span>
+				семь своих заглавных букв, подпоясал инициал за
+				<span class="annotation visible mkPunctuation start end large active">тут ошибка в очень большом кусте текста и выбрана</span>
+				пояс и пустился в дорогу.</p>
+
+			<h4>Стилистика (mkStyle)</h4>
+			<p>Взобравшись на первую
+				<span class="annotation visible mkStyle start end small">тут ошибка</span>
+				вершину курсивных гор,
+				<span class="annotation visible mkStyle start end small active">тут выбранная ошибка</span>
+				бросил он последний взгляд назад,
+				<span class="annotation visible mkStyle start end small annotation-group-primary">тут групповая ошибка</span>
+				на силуэт своего родного города Буквоград, на
+				<span class="annotation visible mkStyle start end small annotation-group-primary active">тут выбранная групповая ошибка</span>
+				заголовок деревни Алфавит и на подзаголовок своего
+				<span class="annotation visible mkStyle start end large">тут ошибка в очень большом кусте текста</span>
+				переулка Строчка. Грустный реторический вопрос скатился
+				<span class="annotation visible mkStyle start end large active">тут ошибка в очень большом кусте текста и выбрана</span>
+				по его щеке и он продолжил свой путь. По дороге встретил текст рукопись.</p>
+
+			<h4>Семантика (mkSemantic)</h4>
+			<p>Она предупредила его:
+				<span class="annotation visible mkSemantic start end small">тут ошибка</span>
+				«В моей стране все
+				<span class="annotation visible mkSemantic start end small active">тут выбранная ошибка</span>
+				переписывается по несколько раз.
+				<span class="annotation visible mkSemantic start end small annotation-group-primary">тут групповая ошибка</span>
+				Единственное, что от меня осталось, это
+				<span class="annotation visible mkSemantic start end small annotation-group-primary active">тут выбранная групповая ошибка</span>
+				приставка «и». Возвращайся ты лучше в свою безопасную
+				<span class="annotation visible mkSemantic start end large">тут ошибка в очень большом кусте текста</span>
+				страну». Не послушавшись рукописи, наш
+				<span class="annotation visible mkSemantic start end large active">тут ошибка в очень большом кусте текста и выбрана</span>
+				текст продолжил свой путь.</p>
+
+			<h4>Типографика (mkTypography)</h4>
+			<p>Вскоре ему повстречался
+				<span class="annotation visible mkTypography start end small">тут ошибка</span>
+				коварный составитель рекламных
+				<span class="annotation visible mkTypography start end small active">тут выбранная ошибка</span>
+				текстов, напоивший его языком и
+				<span class="annotation visible mkTypography start end small annotation-group-primary">тут групповая ошибка</span>
+				речью и заманивший в свое агенство, которое
+				<span class="annotation visible mkTypography start end small annotation-group-primary active">тут выбранная групповая ошибка</span>
+				использовало его снова и снова в своих проектах. И если его
+				<span class="annotation visible mkTypography start end large">тут ошибка в очень большом кусте текста</span>
+				не переписали, то живет он там до сих пор. Далеко-далеко за
+				<span class="annotation visible mkTypography start end large active">тут ошибка в очень большом кусте текста и выбрана</span>
+				словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+
+			<h4>Буква «Ё» (mkYo)</h4>
+			<p>Вдали от всех живут
+				<span class="annotation visible mkYo start end small">тут ошибка</span>
+				они в буквенных домах на берегу
+				<span class="annotation visible mkYo start end small active">тут выбранная ошибка</span>
+				Семантика большого языкового океана.
+				<span class="annotation visible mkYo start end small annotation-group-primary">тут групповая ошибка</span>
+				Маленький ручеек Даль журчит по всей стране
+				<span class="annotation visible mkYo start end small annotation-group-primary active">тут выбранная групповая ошибка</span>
+				и обеспечивает ее всеми необходимыми правилами. Эта
+				<span class="annotation visible mkYo start end large">тут ошибка в очень большом кусте текста</span>
+				парадигматическая страна, в которой жаренные члены
+				<span class="annotation visible mkYo start end large active">тут ошибка в очень большом кусте текста и выбрана</span>
+				предложения залетают прямо в рот.</p>
+
+			<h4>Оформление (mkPaperStructure)</h4>
+			<p>Даже всемогущая пунктуация
+				<span class="annotation visible mkPaperStructure start end small">тут ошибка</span>
+				не имеет власти над рыбными
+				<span class="annotation visible mkPaperStructure start end small active">тут выбранная ошибка</span>
+				текстами, ведущими безорфографичный образ жизни. Однажды
+				<span class="annotation visible mkPaperStructure start end small annotation-group-primary">тут групповая ошибка</span>
+				одна маленькая строчка рыбного
+				<span class="annotation visible mkPaperStructure start end small annotation-group-primary active">тут выбранная групповая ошибка</span>
+				текста по имени Lorem ipsum решила выйти в большой мир
+				<span class="annotation visible mkPaperStructure start end large">тут ошибка в очень большом кусте текста</span>
+				грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках
+				<span class="annotation visible mkPaperStructure start end large active">тут ошибка в очень большом кусте текста и выбрана</span>
+				вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.</p>
+
+		</section>
+		<section>
+			<h2>Проверки вкладки «Красота»</h2>
+			<h4>Тавтологии (mkTautology)</h4>
+			<p>Он собрал семь своих
+				<span class="annotation visible mkTautology start end small">тут ошибка</span>
+				заглавных букв, подпоясал
+				<span class="annotation visible mkTautology start end small active">тут выбранная ошибка</span>
+				инициал за пояс и пустился в дорогу. Взобравшись на
+				<span class="annotation visible mkTautology start end small annotation-group-primary">тут групповая ошибка</span>
+				первую вершину курсивных гор, бросил он
+				<span class="annotation visible mkTautology start end small annotation-group-primary active">тут выбранная групповая ошибка</span>
+				последний взгляд назад, на силуэт своего родного города
+				<span class="annotation visible mkTautology start end large">тут ошибка в очень большом кусте текста</span>
+				Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный
+				<span class="annotation visible mkTautology start end large active">тут ошибка в очень большом кусте текста и выбрана</span>
+				реторический вопрос скатился по его щеке и он продолжил свой путь.</p>
+
+			<h4>Неблагозвучие (mkPhonics)</h4>
+			<p>По дороге встретил
+				<span class="annotation visible mkPhonics start end small">тут ошибка</span>
+				текст рукопись. Она предупредила
+				<span class="annotation visible mkPhonics start end small active">тут выбранная ошибка</span>
+				его: «В моей стране все переписывается по несколько
+				<span class="annotation visible mkPhonics start end small annotation-group-primary">тут групповая ошибка</span>
+				раз. Единственное, что от меня осталось, это
+				<span class="annotation visible mkPhonics start end small annotation-group-primary active">тут выбранная групповая ошибка</span>
+				приставка «и». Возвращайся ты лучше в
+				<span class="annotation visible mkPhonics start end large">тут ошибка в очень большом кусте текста</span>
+				свою безопасную страну». Не послушавшись рукописи, наш
+				<span class="annotation visible mkPhonics start end large active">тут ошибка в очень большом кусте текста и выбрана</span>
+				текст продолжил свой путь.</p>
+
+			<h4>Орфоэпия (mkOrthoepy)</h4>
+			<p>Вскоре ему повстречался
+				<span class="annotation visible mkOrthoepy start end small">тут ошибка</span>
+				коварный составитель
+				<span class="annotation visible mkOrthoepy start end small active">тут выбранная ошибка</span>
+				рекламных текстов, напоивший его языком
+				<span class="annotation visible mkOrthoepy start end small annotation-group-primary">тут групповая ошибка</span>
+				и речью и заманивший в свое агенство, которое
+				<span class="annotation visible mkOrthoepy start end small annotation-group-primary active">тут выбранная групповая ошибка</span>
+				использовало его снова и снова в своих проектах. И если
+				<span class="annotation visible mkOrthoepy start end large">тут ошибка в очень большом кусте текста</span>
+				его не переписали, то живет он там до сих
+				<span class="annotation visible mkOrthoepy start end large active">тут ошибка в очень большом кусте текста и выбрана</span>
+				пор. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+
+			<h4>Синонимы (mkSynonym)</h4>
+			<p>Вдали от всех
+				<span class="annotation visible mkSynonym start end small">тут ошибка</span>
+				живут они в буквенных
+				<span class="annotation visible mkSynonym start end small active">тут выбранная ошибка</span>
+				домах на берегу Семантика большого языкового океана. Маленький
+				<span class="annotation visible mkSynonym start end small annotation-group-primary">тут групповая ошибка</span>
+				ручеек Даль журчит по всей стране
+				<span class="annotation visible mkSynonym start end small annotation-group-primary active">тут выбранная групповая ошибка</span>
+				и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая
+				<span class="annotation visible mkSynonym start end large">тут ошибка в очень большом кусте текста</span>
+				страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над
+				<span class="annotation visible mkSynonym start end large active">тут ошибка в очень большом кусте текста и выбрана</span>
+				рыбными текстами, ведущими безорфографичный образ жизни.</p>
+
+			<h4>Эпитеты (mkEpithet)</h4>
+			<p>Однажды одна маленькая
+				<span class="annotation visible mkEpithet start end small">тут ошибка</span>
+				строчка рыбного
+				<span class="annotation visible mkEpithet start end small active">тут выбранная ошибка</span>
+				текста по имени Lorem ipsum решила выйти в большой мир
+				<span class="annotation visible mkEpithet start end small annotation-group-primary">тут групповая ошибка</span>
+				грамматики. Великий Оксмокс предупреждал
+				<span class="annotation visible mkEpithet start end small annotation-group-primary active">тут выбранная групповая ошибка</span>
+				ее о злых запятых, диких знаках вопроса и
+				<span class="annotation visible mkEpithet start end large">тут ошибка в очень большом кусте текста</span>
+				коварных точках с запятой, но текст не дал
+				<span class="annotation visible mkEpithet start end large active">тут ошибка в очень большом кусте текста и выбрана</span>
+				сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу.</p>
+
+			<h4>Родная речь (mkNativeSpeech)</h4>
+			<p>Взобравшись на первую вершину
+				<span class="annotation visible mkNativeSpeech start end small">тут ошибка</span>
+				курсивных гор, бросил он
+				<span class="annotation visible mkNativeSpeech start end small active">тут выбранная ошибка</span>
+				последний взгляд назад, на силуэт своего родного
+				<span class="annotation visible mkNativeSpeech start end small annotation-group-primary">тут групповая ошибка</span>
+				города Буквоград, на заголовок деревни
+				<span class="annotation visible mkNativeSpeech start end small annotation-group-primary active">тут выбранная групповая ошибка</span>
+				Алфавит и на подзаголовок своего переулка
+				<span class="annotation visible mkNativeSpeech start end large">тут ошибка в очень большом кусте текста</span>
+				Строчка. Грустный реторический вопрос скатился по его щеке и
+				<span class="annotation visible mkNativeSpeech start end large active">тут ошибка в очень большом кусте текста и выбрана</span>
+				он продолжил свой путь. По дороге встретил текст рукопись. Она предупредила его: «В моей стране все переписывается по несколько раз.</p>
+		</section>
+		</div>
+	</body>
+</html>
+
+

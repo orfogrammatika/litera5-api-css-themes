@@ -1,0 +1,50 @@
+span {
+	&.annotation {
+		text-decoration: none;
+
+		&.visible {
+			&.mkGrammar {
+				@include kind($mkGrammarColorBase, $mkGrammarColorBorder, $mkGrammarColorUrl);
+			}
+			&.mkPunctuation {
+				@include kind($mkPunctuationColorBase, $mkPunctuationColorBorder, $mkPunctuationColorUrl);
+			}
+			&.mkStyle {
+				@include kind($mkStyleColorBase, $mkStyleColorBorder, $mkStyleColorUrl);
+			}
+			&.mkSpelling {
+				@include kind($mkSpellingColorBase, $mkSpellingColorBorder, $mkSpellingColorUrl);
+			}
+			&.mkTypography {
+				@include kind($mkTypographyColorBase, $mkTypographyColorBorder, $mkTypographyColorUrl);
+			}
+			&.mkOrthoepy {
+				@include kind($mkOrthoepyColorBase, $mkOrthoepyColorBorder, $mkOrthoepyColorUrl);
+			}
+			&.mkYo {
+				@include kind($mkYoColorBase, $mkYoColorBorder, $mkYoColorUrl);
+			}
+			&.mkSemantic {
+				@include kind($mkSemanticColorBase, $mkSemanticColorBorder, $mkSemanticColorUrl);
+			}
+			&.mkPaperStructure {
+				@include kind($mkPaperStructureColorBase, $mkPaperStructureColorBorder, $mkPaperStructureColorUrl);
+			}
+			&.mkSynonym {
+				@include kind($mkSynonymColorBase, $mkSynonymColorBorder, $mkSynonymColorUrl);
+			}
+			&.mkEpithet {
+				@include kind($mkEpithetColorBase, $mkEpithetColorBorder, $mkEpithetColorUrl);
+			}
+			&.mkPhonics {
+				@include kind($mkPhonicsColorBase, $mkPhonicsColorBorder, $mkPhonicsColorUrl);
+			}
+			&.mkTautology {
+				@include kind($mkTautologyColorBase, $mkTautologyColorBorder, $mkTautologyColorUrl);
+			}
+			&.mkNativeSpeech {
+				@include kind($mkNativeSpeechColorBase, $mkNativeSpeechColorBorder, $mkNativeSpeechColorUrl);
+			}
+		}
+	}
+}

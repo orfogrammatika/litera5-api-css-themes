@@ -1,0 +1,57 @@
+[data-litera5-hidden] {
+  display: none;
+}
+
+[data-litera5-nocheck] {
+  color: dimgrey;
+}
+
+.litera5-meta {
+  padding: 8px;
+  background: #f3f3f3;
+  border: 1px dashed gray;
+  margin-bottom: 32px;
+
+  .meta {
+    padding: 8px;
+    border: 1px dashed gray;
+    background: white;
+    margin-top: 26px;
+    margin-bottom: 0;
+    &:before {
+      display: block;
+      font-size: 12px;
+      font-weight: normal;
+      color: darkgray;
+      margin-top: -33px;
+      margin-bottom: 12px;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+      margin: 0;
+    }
+  }
+
+  .meta-title:before {
+    content: 'Заголовок:';
+  }
+
+  .meta-description:before {
+    content: 'Описание:';
+  }
+
+  .meta-keywords {
+    h5 {
+      font-size: $font-size-base;
+      font-weight: normal;
+    }
+
+    &:before {
+      content: 'Ключевые слова:';
+    }
+  }
+
+  .meta-custom-sample:before {
+    content: 'Дополнительный параметр:';
+  }
+}

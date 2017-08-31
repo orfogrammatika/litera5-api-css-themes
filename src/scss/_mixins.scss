@@ -1,0 +1,28 @@
+$white: #fff;
+
+@mixin background-clip($clip) {
+	-webkit-background-clip: $clip;
+	-moz-background-clip: $clip;
+	background-clip: $clip;
+}
+
+// Полупрозначный фон определённого цвета и прозрачности
+@mixin translucent-background($color: $white, $alpha: 1) {
+	background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
+}
+
+// Полупрозрачная обводка определённого цвета и прозрачности
+@mixin translucent-border($color: $white, $alpha: 1) {
+	border-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
+	@include background-clip(padding-box);
+}
+
+@mixin border-left-radius($radius) {
+	border-top-left-radius: $radius;
+	border-bottom-left-radius: $radius;
+}
+
+@mixin border-right-radius($radius) {
+	border-top-right-radius: $radius;
+	border-bottom-right-radius: $radius;
+}

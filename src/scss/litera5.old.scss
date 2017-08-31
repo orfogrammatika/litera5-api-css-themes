@@ -1,0 +1,65 @@
+@import 'variables.base';
+@import 'palette.base';
+@import 'mixins';
+
+@import 'common';
+@import 'meta';
+
+p {
+  text-align: justify;
+  text-indent: 25px;
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+}
+
+@mixin kind($colorBase, $colorBorderBase, $url) {
+  $colorBackground: darken($colorBase, 5%);
+  $colorBackgroundHl: lighten($colorBase, 0%);
+  $colorBorder: lighten($colorBorderBase, 15%);
+  $colorBorderHl: darken($colorBorderBase, 0%);
+
+  &.large {
+    background: $url repeat-x 100% 100%;
+  }
+
+  &.small {
+    @include translucent-background($colorBackground, 0.5);
+    padding-bottom: 2px;
+  }
+
+  &.active {
+    background: $colorBackgroundHl;
+    padding: 4px 0;
+    border-top: 1px solid $colorBorderHl;
+    border-bottom: 1px solid $colorBorderHl;
+
+    &.start {
+      border-left: 1px solid $colorBorderHl;
+      @include border-left-radius(4px);
+      padding-left: 6px;
+    }
+
+    &.end {
+      border-right: 1px solid $colorBorderHl;
+      @include border-right-radius(4px);
+      padding-right: 6px;
+    }
+  }
+
+  &.annotation-group-primary {
+    @include translucent-background($colorBackground, 0.70);
+    border-bottom: 2px dotted $colorBorderHl;
+    padding: 4px 0;
+
+    &.active {
+      border-bottom-style: solid;
+    }
+  }
+
+  &.annotation-group-secondary {
+    @include translucent-background($colorBackground, 0.85);
+  }
+}
+
+@import 'annotation';
+

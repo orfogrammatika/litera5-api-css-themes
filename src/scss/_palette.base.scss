@@ -1,0 +1,101 @@
+$colorGrayBase: #ffffff;
+$colorGrayBorder: darken($colorGrayBase, 40);
+
+$color1Base: #ea9999;
+$color1Border: darken($color1Base, 40);
+
+$color2Base: #b6d7a8;
+$color2Border: darken($color2Base, 40);
+
+$color3Base: #f9cb9c;
+$color3Border: darken($color3Base, 40);
+
+$color4Base: #9fc5e8;
+$color4Border: darken($color4Base, 40);
+
+$color5Base: #a2c4c9;
+$color5Border: darken($color5Base, 40);
+
+$color6Base: #cccccc;
+$color6Border: darken($color6Base, 40);
+
+$color7Base: #ffe599;
+$color7Border: darken($color7Base, 40);
+
+$color8Base: #d5a6bd;
+$color8Border: darken($color8Base, 40);
+
+$color9Base: #6d9eeb;
+$color9Border: darken($color9Base, 40);
+
+$color10Base: #8e7cc3;
+$color10Border: darken($color10Base, 40);
+
+$color11Base: #a2c4c9;
+$color11Border: darken($color11Base, 40);
+
+$color12Base: #d5a6bd;
+$color12Border: darken($color12Base, 40);
+
+$color13Base: #caeacb;
+$color13Border: darken($color13Base, 40);
+
+
+
+
+$mkGrammarColorBase: $color1Base;
+$mkGrammarColorBorder: $color1Border;
+$mkGrammarColorUrl: url(../img/wavyline1.gif);
+
+$mkPunctuationColorBase: $color2Base;
+$mkPunctuationColorBorder: $color2Border;
+$mkPunctuationColorUrl: url(../img/wavyline2.gif);
+
+$mkStyleColorBase: $color3Base;
+$mkStyleColorBorder: $color3Border;
+$mkStyleColorUrl: url(../img/wavyline3.gif);
+
+$mkSpellingColorBase: $color4Base;
+$mkSpellingColorBorder: $color4Border;
+$mkSpellingColorUrl: url(../img/wavyline4.gif);
+
+$mkTypographyColorBase: $color5Base;
+$mkTypographyColorBorder: $color5Border;
+$mkTypographyColorUrl: url(../img/wavyline5.gif);
+
+$mkOrthoepyColorBase: $color6Base;
+$mkOrthoepyColorBorder: $color6Border;
+$mkOrthoepyColorUrl: url(../img/wavyline6.gif);
+
+$mkYoColorBase: $color8Base;
+$mkYoColorBorder: $color8Border;
+$mkYoColorUrl: url(../img/wavyline8.gif);
+
+$mkSemanticColorBase: $color9Base;
+$mkSemanticColorBorder: $color9Border;
+$mkSemanticColorUrl: url(../img/wavyline9.gif);
+
+$mkPaperStructureColorBase: $color10Base;
+$mkPaperStructureColorBorder: $color10Border;
+$mkPaperStructureColorUrl: url(../img/wavyline10.gif);
+
+$mkSynonymColorBase: $color11Base;
+$mkSynonymColorBorder: $color11Border;
+$mkSynonymColorUrl: url(../img/wavyline11.gif);
+
+$mkEpithetColorBase: $color12Base;
+$mkEpithetColorBorder: $color12Border;
+$mkEpithetColorUrl: url(../img/wavyline12.gif);
+
+$mkPhonicsColorBase: $color3Base;
+$mkPhonicsColorBorder: $color3Border;
+$mkPhonicsColorUrl: url(../img/wavyline3.gif);
+
+$mkTautologyColorBase: $color2Base;
+$mkTautologyColorBorder: $color2Border;
+$mkTautologyColorUrl: url(../img/wavyline2.gif);
+
+$mkNativeSpeechColorBase: $color1Base;
+$mkNativeSpeechColorBorder: $color1Border;
+$mkNativeSpeechColorUrl: url(../img/wavyline1.gif);
+
