@@ -12,12 +12,12 @@
     "build:new": "node-sass --output dist/css/ --output-style compressed src/scss/litera5.new.scss",
     "build:orfogrammka": "node-sass --output dist/css/ --output-style compressed src/scss/litera5.orfogrammka.scss",
     "build:html:root": "cp src/index.html dist/",
-    "build:html:old": "cp src/theme.html dist/_old.html & replace-in-file /{THEME}/g old dist/_old.html  --isRegex",
-    "build:html:new": "cp src/theme.html dist/_new.html & replace-in-file /{THEME}/g new dist/_new.html --isRegex",
-    "build:html:orfogrammka": "cp src/theme.html dist/_orfogrammka.html & replace-in-file /{THEME}/g orfogrammka dist/_orfogrammka.html --isRegex",
-    "build:html": "npm run build:html:root & npm run build:html:old & npm run build:html:new & npm run build:html:orfogrammka",
+    "build:html:old": "cp src/theme.html dist/_old.html && replace-in-file /{THEME}/g old dist/_old.html  --isRegex",
+    "build:html:new": "cp src/theme.html dist/_new.html && replace-in-file /{THEME}/g new dist/_new.html --isRegex",
+    "build:html:orfogrammka": "cp src/theme.html dist/_orfogrammka.html && replace-in-file /{THEME}/g orfogrammka dist/_orfogrammka.html --isRegex",
+    "build:html": "npm run build:html:root && npm run build:html:old && npm run build:html:new && npm run build:html:orfogrammka",
     "prebuild": "npm run clean",
-    "build": "npm run build:old & npm run build:new & npm run build:orfogrammka & npm run build:html"
+    "build": "npm run build:old && npm run build:new && npm run build:orfogrammka && npm run build:html"
   },
   "devDependencies": {
     "cpx": "^1.5.0",
