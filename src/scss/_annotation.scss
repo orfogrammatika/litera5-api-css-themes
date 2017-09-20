@@ -45,6 +45,9 @@ span {
 			&.mkNativeSpeech {
 				@include kind($mkNativeSpeechColorBase, $mkNativeSpeechColorBorder, $mkNativeSpeechColorUrl);
 			}
+			&.mkWater {
+				@include kind($mkWaterColorBase, $mkWaterColorBorder, $mkWaterColorUrl);
+			}
 		}
 	}
 }
