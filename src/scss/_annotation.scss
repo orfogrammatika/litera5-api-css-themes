@@ -48,6 +48,9 @@ span {
 			&.mkWater {
 				@include kind($mkWaterColorBase, $mkWaterColorBorder, $mkWaterColorUrl);
 			}
+			&.mkCollocation {
+				@include kind($mkCollocationColorBase, $mkCollocationColorBorder, $mkCollocationColorUrl);
+			}
 		}
 	}
 }
